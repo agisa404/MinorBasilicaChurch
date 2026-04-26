@@ -1,0 +1,12 @@
+    if ($isMinister) {
+        array_splice($sideLinks, 5, 0, [[
+            'key' => 'event_request_menu',
+            'label' => 'Event Request',
+            'href' => 'minister_event_request.php?kind=event',
+            'icon' => 'bi-calendar-plus',
+            'children' => [
+                ['key' => 'event_request_event', 'label' => 'Event', 'href' => 'minister_event_request.php?kind=event', 'icon' => 'bi-calendar-event'],
+                ['key' => 'event_request_mass', 'label' => 'Mass', 'href' => 'minister_event_request.php?kind=mass', 'icon' => 'bi-cross'],
+            ],
+        ]]);
+    }

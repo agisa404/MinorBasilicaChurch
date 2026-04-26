@@ -1,0 +1,10 @@
+        array_splice($sideLinks, 5, 0, [[
+            'key' => 'create_schedule_menu',
+            'label' => 'Create Schedule',
+            'href' => 'event_schedule_admin.php?kind=event',
+            'icon' => 'bi-calendar-plus',
+            'children' => [
+                ['key' => 'create_schedule_event', 'label' => 'Event', 'href' => 'event_schedule_admin.php?kind=event', 'icon' => 'bi-calendar-event'],
+                ['key' => 'create_schedule_mass', 'label' => 'Mass', 'href' => 'event_schedule_admin.php?kind=mass', 'icon' => 'bi-cross'],
+            ],
+        ]]);

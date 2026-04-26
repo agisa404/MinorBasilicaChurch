@@ -1,0 +1,127 @@
+.form-container {
+    width: min(980px, 100%);
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.church span {
+    color: var(--gold-strong);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title {
+    margin-top: 8px;
+    color: var(--gold-strong);
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    font-weight: 700;
+}
+
+.instructions {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.45;
+    margin-bottom: 14px;
+}
+
+.section {
+    margin-bottom: 12px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row.row-3 {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+}
+
+.row input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 184, 116, 0.35);
+    background: rgba(6, 9, 14, 0.65);
+    color: #fff;
+}
+
+.labels span {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.requirements,
+.notes {
+    border: 1px solid rgba(217, 184, 116, 0.35);
+    border-radius: 10px;
+    padding: 12px;
+    background: rgba(11, 16, 24, 0.45);
+}
+
+.requirements h4,
+.notes h4 {
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+.requirements label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text);
+    font-weight: 400;
+}
+
+.records {
+    margin-top: 10px;
+    display: grid;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.signatures {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    text-align: center;
+}
+
+.line {
+    border-bottom: 1px solid rgba(217, 184, 116, 0.6);
+    margin-top: 26px;
+}
+
+@media (max-width: 900px) {
+    .row,
+    .row.row-3,
+    .signatures {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+}

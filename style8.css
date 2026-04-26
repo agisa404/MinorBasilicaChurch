@@ -1,0 +1,66 @@
+.form-container {
+    width: min(860px, 100%);
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: var(--gold-strong);
+    margin-bottom: 14px;
+    font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+    line-height: 1.35;
+}
+
+#certForm fieldset {
+    border: 1px solid rgba(217, 184, 116, 0.35);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: rgba(11, 16, 24, 0.45);
+}
+
+#certForm legend {
+    color: var(--gold);
+    padding: 0 8px;
+    font-weight: 600;
+}
+
+#certForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+#certForm input[type="text"],
+#certForm input[type="date"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 184, 116, 0.35);
+    background: rgba(6, 9, 14, 0.65);
+    color: #fff;
+}
+
+#certForm .cert {
+    width: auto;
+    margin-right: 8px;
+}
+
+#certForm button[type="submit"] {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 11px 14px;
+    background: var(--gold);
+    color: #2b1d06;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 14px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
